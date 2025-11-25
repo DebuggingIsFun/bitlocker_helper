@@ -1,14 +1,3 @@
-<#
---- Version 0.1 of the Script for BETRIEB-30657---
-
-Features
-    - Check TPM Module Status (Present, Enabled, Activated and Ready)
-    - Check SecureBoot Status
-    - Write Regkey/Detectionkey for all properties HKLM:\SOFTWARE\BitLocker"
-        - Set DWORD value of 0 if false
-        - Set DWORD value of 1 if true
-#>
-
 # Check TPM status
 $tpm = Get-Tpm
 
